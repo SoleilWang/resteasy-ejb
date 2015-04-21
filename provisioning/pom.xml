@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.alex.wang</groupId>
+    <artifactId>resteasy-use-ejb</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.alex.wang</groupId>
+  <artifactId>provisioning</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+  <finalName>provisioning</finalName>
+  <plugins>
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+    <configuration>
+        <archive>
+        <!-- for using the class in common-0.0.1-SNAPSHOT.jar deployed  in any subdirectory under deployment directory,  -->
+        <!-- we need to add configure this manifestEntries of package plugin    -->
+            <manifestEntries>
+               <Dependencies>deployment.common-0.0.1-SNAPSHOT.jar</Dependencies>
+            </manifestEntries>
+        </archive>
+	</configuration>
+	</plugin>
+	</plugins>
+  </build>
+  <dependencies>
+  <dependency>
+  <groupId>com.alex.wang</groupId>
+  <artifactId>common</artifactId>
+  <version>0.0.1-SNAPSHOT</version> 
+  </dependency>
+
+  
+  </dependencies>
+  
+</project>

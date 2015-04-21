@@ -1,0 +1,27 @@
+<web-app>
+    <display-name>Restful Web Service for NBI </display-name>
+    <context-param>
+        <param-name>resteasy.jndi.resources</param-name>
+        <param-value>java:global/rest-ejb/CountServiceImpl</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>resteasy.servlet.mapping.prefix</param-name>
+        <param-value>/alex</param-value>
+    </context-param>
+    
+    <servlet>
+        <servlet-name>resteasy-servlet</servlet-name>
+        <servlet-class>
+            org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+    </servlet>
+
+    
+    <servlet-mapping>
+        <servlet-name>resteasy-servlet</servlet-name>
+        <url-pattern>/alex/*</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>

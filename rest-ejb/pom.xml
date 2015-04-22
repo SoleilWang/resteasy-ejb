@@ -10,21 +10,21 @@
   <version>0.0.1-SNAPSHOT</version>
   <build>
   <finalName>rest-ejb</finalName>
-  <plugins>
+  <!-- plugins>
   <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-jar-plugin</artifactId>
     <configuration>
         <archive>
-        <!-- for using the class in common-0.0.1-SNAPSHOT.jar deployed  in any subdirectory under deployment directory,  -->
-        <!-- we need to add configure this manifestEntries of package plugin    -->
+        for using the class in common-0.0.1-SNAPSHOT.jar deployed  in any subdirectory under deployment directory,
+         we need to add configure this manifestEntries of package plugin   
             <manifestEntries>
                <Dependencies>deployment.common-0.0.1-SNAPSHOT.jar</Dependencies>
             </manifestEntries>
         </archive>
     </configuration>
     </plugin>
-    </plugins>
+    </plugins-->
   </build>
   <dependencies>
   <dependency>

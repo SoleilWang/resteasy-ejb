@@ -10,8 +10,8 @@ import com.alex.wang.record.util.Record;
 
 @Stateless
 public class CountServiceImpl implements CountService {
-    public static final String RECORDER_JNDI_NAME="java:global/provisioning/Record";
-    @EJB(lookup="java:global/provisioning/RecordImpl!com.alex.wang.record.util.Record$Local")
+
+    @EJB(lookup="java:global/rest-ear/provisioning-0.0.1-SNAPSHOT/RecordImpl!com.alex.wang.record.util.Record$Remote")
     Record record = null;
 
     public Response count(String number) {

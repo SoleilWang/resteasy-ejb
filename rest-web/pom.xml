@@ -12,14 +12,5 @@
   <build>
   <finalName>restweb</finalName>
   </build>
-  <dependencies>
-  <dependency>
-  <groupId>com.alex.wang</groupId>
-  <artifactId>util</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <scope>provided</scope>
-  </dependency>
-  
-  
-  </dependencies>
+
 </project>

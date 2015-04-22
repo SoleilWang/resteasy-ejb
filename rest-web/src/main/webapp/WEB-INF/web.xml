@@ -2,7 +2,7 @@
     <display-name>Restful Web Service for NBI </display-name>
     <context-param>
         <param-name>resteasy.jndi.resources</param-name>
-        <param-value>java:global/rest-ejb/CountServiceImpl</param-value>
+        <param-value>java:global/rest-ear/rest-ejb-0.0.1-SNAPSHOT/CountServiceImpl</param-value>
     </context-param>
     
     <context-param>

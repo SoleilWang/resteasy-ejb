@@ -9,7 +9,7 @@ import javax.ejb.Remote;
 import javax.ejb.Local;
 import com.alex.wang.log.util.LoggerManager;
 
-@Stateless //no need set mappedName
+@Stateless(mappedName=Record.JNDINAME)
 @Remote(Record.Remote.class)
 @Local(Record.Local.class)
 public class RecordImpl implements Record {

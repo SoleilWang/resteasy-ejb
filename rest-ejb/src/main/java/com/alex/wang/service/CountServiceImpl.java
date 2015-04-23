@@ -18,7 +18,8 @@ public class CountServiceImpl implements CountService {
         // TODO Auto-generated method stub
         int realValue= Integer.parseInt(number)*2;
         LoggerManager.info(String.valueOf(realValue));
-        record.recordMsg(String.valueOf(realValue));
+        String result = record.recordMsg(String.valueOf(realValue));
+        LoggerManager.info(result);
         ResponseBuilder builder = Response.status(200);
         builder.entity(realValue);
         return builder.build();

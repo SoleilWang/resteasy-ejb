@@ -8,5 +8,5 @@ public interface Record {
    public interface Remote extends Record{
        
    }
-   public void recordMsg(String msg);
+   public String recordMsg(String msg);
 }

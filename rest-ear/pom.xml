@@ -12,8 +12,21 @@
   <dependencies>
 
   <dependency>
+ <groupId>com.alex.wang</groupId>
+  <artifactId>database</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <type>ejb</type>
+  </dependency>
+  
+  <dependency>
   <groupId>com.alex.wang</groupId>
   <artifactId>provisioning</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <type>ejb</type>
+  </dependency>
+  <dependency>
+  <groupId>com.alex.wang</groupId>
+  <artifactId>message</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <type>ejb</type>
   </dependency>

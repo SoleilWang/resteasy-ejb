@@ -9,6 +9,8 @@
   <module>provisioning</module>
   <module>rest-web</module>
   <module>rest-ejb</module>
+  <module>message</module>
+  <module>database</module>
   <module>rest-ear</module>
   </modules>
   <dependencies>
@@ -18,8 +20,6 @@
             <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
- 
- 
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jaxrs</artifactId>
